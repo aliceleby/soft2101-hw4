@@ -58,6 +58,31 @@ STEP d:
 .DS_Store
 Thumbs.db
 
+STEP f:
+
+feature-1 branch commit history:
+git log --oneline --decorate
+
+feature-1 branch directory listing:
+ls
+
+hmk1 directory contents:
+ls hmk1
+
+7f94811 (HEAD -> main, origin/main, origin/HEAD) merge feature-3 into main
+5bd610a merge feature-2 into main
+8076c7d (origin/feature-3, feature-3) remove homework4.txt from feature-3
+5ef7612 (origin/feature-2, feature-2) remove homework4.txt from feature-2
+9564dbb complete step k
+4f31d55 satisfying requirement change three
+c2842c2 complete step j
+2334d64 satisfying requirement change two
+77958e7 (origin/feature-1, feature-1) satisfying requirement one
+640fdae complete step a
+794defa create hwk4 and homework4.txt
+
+
+
 STEP j:
 
 git log --oneline --decorate
@@ -74,3 +99,8 @@ STEP k:
 640fdae complete step a
 794defa (origin/main, origin/HEAD) create hwk4 and homework4.txt
 
+STEP m:
+
+During the merge of feature-3 into main, a modify/delete conflict occurred on homework4.txt.
+The conflict was resolved by keeping the version from the main branch.
+The final version of the program in main prints only even numbers between the given inputs.
