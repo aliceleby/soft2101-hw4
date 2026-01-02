@@ -3,19 +3,66 @@ STEP a:
 git config --global user.name "Ali Çelebi"
 git config --global user.email "22comp1010@isik.edu.tr"
 git config --global core.editor "nano"
-git config --list 
+git config --list
 
 credential.helper=osxkeychain
 init.defaultbranch=main
 filter.lfs.clean=git-lfs clean -- %f
-STEP a:
-
-git config --global user.name "Ali Celebi"
-git config --global user.email "ali@example.com"
-git config --global core.editor "nano"
-git config --list
-
-user.name=Ali Celebi
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Ali Çelebi
 user.email=22comp1010@isik.edu.tr
 core.editor=nano
-core.autocrlf=input
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=https://github.com/aliceleby/soft2101-hw4.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+
+STEP b:
+
+git clone https://github.com/aliceleby/soft2101-hw4.git
+cd soft2101-hw4
+ls
+ls -a
+ls .git
+
+aliceleby@192 soft2101-hw4 % ls                                                
+hwk4
+aliceleby@192 soft2101-hw4 % ls -a
+.	..	.git	hwk4
+aliceleby@192 soft2101-hw4 % ls .git
+COMMIT_EDITMSG	FETCH_HEAD	index		objects		refs
+config		HEAD		info		ORIG_HEAD
+description	hooks		logs		packed-refs
+
+
+STEP c:
+
+[Işık University Software Engineering Department](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
+
+STEP d:
+
+.gitignore rules:
+*.class
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+STEP j:
+
+git log --oneline --decorate
+
+2334d64 (HEAD -> feature-2, origin/feature-2) satisfying requirement change two
+77958e7 (origin/feature-3, origin/feature-1, main, feature-3, feature-1) satisfying requirement one
+640fdae complete step a
+794defa (origin/main, origin/HEAD) create hwk4 and homework4.txt
