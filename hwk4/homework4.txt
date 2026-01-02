@@ -66,3 +66,11 @@ git log --oneline --decorate
 77958e7 (origin/feature-3, origin/feature-1, main, feature-3, feature-1) satisfying requirement one
 640fdae complete step a
 794defa (origin/main, origin/HEAD) create hwk4 and homework4.txt
+
+STEP k:
+
+4f31d55 (HEAD -> feature-3, origin/feature-3) satisfying requirement change three
+77958e7 (origin/feature-1, feature-1) satisfying requirement one
+640fdae complete step a
+794defa (origin/main, origin/HEAD) create hwk4 and homework4.txt
+
